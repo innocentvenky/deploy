@@ -1,0 +1,27 @@
+{% extends 'Basic.html' %}
+{% block content %}
+<table border="2">
+    <thead>
+        <th>Employee Name</th>
+        <th>Employee ID</th>
+        <th>Phone number</th>
+        <th>Salary</th>
+        <th>Address</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </thead>
+    {% for data in data %}
+    <tr>
+        <td>{{data.emp_name}}</td>
+        <td>{{data.emp_id}}</td>
+        <td>{{data.phone_no}}</td>
+        <td>{{data.salary}}</td>
+        <td>{{data.address}}</td>
+        <td><a href="update/{{data.id}}"> Update</a></td>
+        <td><a href="delete/{{data.id}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="Create/"> Create</a
+{% endblock content %}
