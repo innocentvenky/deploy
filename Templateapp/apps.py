@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CurdAppConfig(AppConfig):
+class TemplateappConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'CURD_app'
+    name = 'Templateapp'
